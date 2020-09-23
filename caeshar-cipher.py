@@ -33,8 +33,8 @@ text = input("Enter a string to encrypt/decrypt: \n")
 option = input("Do you want to Encrypt or Decrypt? Please answer E or D: \n")
 shift = input("How many times do you want the text shifted? (From 1 to 26) \n")
 if ((option == "E") and (text) and (int(shift)>0) and (int(shift)<27)):
-	print(encryption(text, shift))
+	print("\nThis is your text encrypted: ", encryption(text, shift))
 elif ((option == "D") and (text) and (int(shift)>0) and (int(shift)<27)):
-	print(decryption(text,shift))
+	print("\nThis is your text encrypted: ", decryption(text,shift))
 else:
 	print("Something went wrong, try again.")
